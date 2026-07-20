@@ -1,12 +1,18 @@
 # Verified Card Authority (VCA)
 
-![Card Authentication](https://images.unsplash.com/photo-1613588718956-c2e80305bf61?auto=format&fit=crop&q=80&w=1200&h=400)
+![VCA Card Authentication Overview](./assets/screenshot-1.png)
+*Above: The VCA Card Authentication platform overview and interactive graded slab view.*
 
 **Verified Card Authority (VCA)** is revolutionizing the collectible grading industry by introducing the world's first **Active NFC Cryptographic Seal**. We provide absolute integrity, immutable registry tracking, and tamper-proof security for high-value collector items (TCG, Sports Cards, and more).
 
 ## Leading the Industry with NFC Technology
 
-At VCA, we are setting a new standard for collectible security. We are leading the industry by closing the loop on high-value collectible fraud. Even if card cases are perfectly reconstructed physically by bad actors, their digital ledger keys are severed permanently upon any physical opening. 
+At VCA, we are setting a new standard for collectible security and leading the industry by closing the loop on high-value collectible fraud. Our target audience encompasses high-end auction houses, institutional vaulting services, elite collectors, and trading card authentication platforms who demand zero-trust asset verification.
+
+Even if card cases are perfectly reconstructed physically by bad actors, their digital ledger keys are severed permanently upon any physical opening. We are replacing subjective visual-only authentication with undeniable, mathematically backed cryptographic proof.
+
+![VCA Case Diagnostics](./assets/screenshot-2.png)
+*Above: Passive NFC Microchip loop architecture protecting the sonic-welded slab.*
 
 Our proprietary case architecture integrates physical airtight chemical sensors with passive microchip circuits:
 
@@ -15,6 +21,9 @@ A microscopic continuous loop trace runs inside the sonic-weld lining of the VCA
 
 ### 2. Passive, Battery-Free Energy
 The security circuit is passive and does not rely on an integrated battery. It dynamically harvests RF energy from the scanner device (smartphone or handheld reader) when placed nearby.
+
+![VCA Breach Alert System](./assets/screenshot-3.png)
+*Above: Live tamper simulation demonstrating an immediate breach alert and ledger invalidation.*
 
 ### 3. Photochromic VCA Black-out Foil
 If the airtight seal is broken, the internal holographic "VCA" watermark undergoes oxygen-induced photochromic oxidation. It changes permanently from a shimmering rainbow color to solid carbon black.
