@@ -1,6 +1,6 @@
 # Verified Card Authority (VCA)
 
-![VCA Card Authentication Overview](public/screenshot-1.png)
+![VCA Card Authentication Overview](./src/assets/images/vca_overview_1784577595886.jpg)
 *Above: The VCA Card Authentication platform overview and interactive graded slab view.*
 
 **Verified Card Authority (VCA)** is revolutionizing the collectible grading industry by introducing the world's first **Active NFC Cryptographic Seal**. We provide absolute integrity, immutable registry tracking, and tamper-proof security for high-value collector items (TCG, Sports Cards, and more).
@@ -11,7 +11,7 @@ At VCA, we are setting a new standard for collectible security and leading the i
 
 Even if card cases are perfectly reconstructed physically by bad actors, their digital ledger keys are severed permanently upon any physical opening. We are replacing subjective visual-only authentication with undeniable, mathematically backed cryptographic proof.
 
-![VCA Case Diagnostics](public/screenshot-2.png)
+![VCA Case Diagnostics](./src/assets/images/vca_diagnostics_1784577608909.jpg)
 *Above: Passive NFC Microchip loop architecture protecting the sonic-welded slab.*
 
 Our proprietary case architecture integrates physical airtight chemical sensors with passive microchip circuits:
@@ -22,7 +22,7 @@ A microscopic continuous loop trace runs inside the sonic-weld lining of the VCA
 ### 2. Passive, Battery-Free Energy
 The security circuit is passive and does not rely on an integrated battery. It dynamically harvests RF energy from the scanner device (smartphone or handheld reader) when placed nearby.
 
-![VCA Breach Alert System](public/screenshot-3.png)
+![VCA Breach Alert System](./src/assets/images/vca_breach_1784577622387.jpg)
 *Above: Live tamper simulation demonstrating an immediate breach alert and ledger invalidation.*
 
 ### 3. Photochromic VCA Black-out Foil
