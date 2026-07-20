@@ -1,0 +1,8 @@
+{
+  "name": "Verified Card Authority",
+  "description": "Secure authentication services and real-time verification dashboard for high-value collector items.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
