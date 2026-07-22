@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import infographicImg from '../assets/images/vca_infographic_1784684822713.jpg';
+import infographicImg from '../assets/images/vca_slab_new_1784695503544.jpg';
 
 export default function Infographic() {
   return (

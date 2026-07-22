@@ -1,5 +1,11 @@
 # Verified Card Authority (VCA)
 
+## Video Demo
+<video src="https://github.com/user-attachments/assets/vca-demo-video.mp4" controls="controls" width="100%" style="max-width: 800px;">
+  Your browser does not support the video tag.
+</video>
+*Above: VCA product pitch and demo video.*
+
 ![VCA Card Authentication Overview](./src/assets/images/vca_overview_1784577595886.jpg)
 *Above: The VCA Card Authentication platform overview and interactive graded slab view.*
 

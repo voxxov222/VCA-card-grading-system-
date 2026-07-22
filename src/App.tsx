@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
@@ -15,6 +16,13 @@ import Auth from './components/Auth';
 import ScrollIndicator from './components/ScrollIndicator';
 
 export default function App() {
+  useEffect(() => {
+    if (!sessionStorage.getItem('vca_splash_seen')) {
+      sessionStorage.setItem('vca_splash_seen', 'true');
+      window.location.href = '/splash.html';
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-950 font-sans selection:bg-cyan-500/30">
       <Header />
