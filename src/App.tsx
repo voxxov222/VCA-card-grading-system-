@@ -10,6 +10,7 @@ import HowItWorks from './components/HowItWorks';
 import GradingGuide from './components/GradingGuide';
 import NfcSecurityExplainer from './components/NfcSecurityExplainer';
 import Infographic from './components/Infographic';
+import InteractiveModels from './components/InteractiveModels';
 import Dashboard from './components/Dashboard';
 import SubmissionForm from './components/SubmissionForm';
 import Auth from './components/Auth';
@@ -31,6 +32,7 @@ export default function App() {
         <HowItWorks />
         <GradingGuide />
         <NfcSecurityExplainer />
+        <InteractiveModels />
         <Infographic />
         <SubmissionForm />
         <Dashboard />
