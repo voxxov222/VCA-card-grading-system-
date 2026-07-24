@@ -1,20 +1,35 @@
 import React from 'react';
-import HoloCard from './HoloCard';
+import GeneratedTradingCard from './GeneratedTradingCard';
 import { ShieldCheck, QrCode } from 'lucide-react';
 
 interface GradedSlabProps {
-  cardImageUrl: string;
+  cardImageUrl?: string;
   cardName: string;
   cardSet: string;
   cardNumber: string;
   grade: string;
-  gradeNumber: string;
+  gradeNumber: string | number;
   certId: string;
   type: 'pokemon' | 'sports';
   className?: string;
+  year?: number;
+  artwork?: string;
+  side?: 'front' | 'back';
 }
 
-export default function GradedSlab({ cardImageUrl, cardName, cardSet, cardNumber, grade, gradeNumber, certId, type, className = '' }: GradedSlabProps) {
+export default function GradedSlab({ 
+  cardName, 
+  cardSet, 
+  cardNumber, 
+  grade, 
+  gradeNumber, 
+  certId, 
+  type, 
+  className = '',
+  year = 1999,
+  artwork = type === 'pokemon' ? '🔥 Pikachu V Electric' : '🏆 MVP Rookie',
+  side = 'front'
+}: GradedSlabProps) {
   return (
     <div className={`relative w-[340px] sm:w-[380px] h-[580px] sm:h-[640px] bg-slate-200/5 border-[6px] sm:border-8 border-white/10 rounded-[28px] sm:rounded-3xl p-3 sm:p-4 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.8),inset_0_0_20px_rgba(255,255,255,0.05)] flex flex-col items-center gap-3 sm:gap-4 group ${className}`}>
       
@@ -74,8 +89,17 @@ export default function GradedSlab({ cardImageUrl, cardName, cardSet, cardNumber
          <div className="absolute inset-2 sm:inset-3 border-2 border-white/5 rounded-lg pointer-events-none" />
          <div className="absolute inset-3 sm:inset-4 border border-white/5 rounded-lg pointer-events-none" />
          
-         <div className="transform scale-[0.75] sm:scale-[0.85] flex items-center justify-center">
-           <HoloCard imageUrl={cardImageUrl} />
+         <div className="transform scale-[0.85] sm:scale-[0.95] flex items-center justify-center">
+           <GeneratedTradingCard 
+             title={cardName}
+             set={cardSet}
+             year={year}
+             category={type === 'pokemon' ? 'Pokemon' : 'Sports'}
+             grade={grade}
+             artwork={artwork}
+             side={side}
+             imageUrl={cardImageUrl}
+           />
          </div>
       </div>
     </div>

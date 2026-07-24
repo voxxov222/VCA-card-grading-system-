@@ -86,10 +86,10 @@ export default function Hero() {
             className="absolute right-0 lg:-right-10 top-0 z-10 origin-bottom-right"
           >
             <GradedSlab 
-              cardImageUrl="https://images.pokemontcg.io/base1/4_hires.png" 
-              cardName="Charizard - Holo"
-              cardSet="1999 POKEMON BASE SET"
-              cardNumber="4/102"
+              cardImageUrl="https://images.pokemontcg.io/swsh4/43_hires.png" 
+              cardName="Pikachu V - Holo"
+              cardSet="2021 POKEMON SWSH"
+              cardNumber="061/185"
               grade="GEM MINT"
               gradeNumber="10"
               certId="VCA-9284-77X"
