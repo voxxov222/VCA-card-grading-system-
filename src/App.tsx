@@ -6,6 +6,7 @@
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import BlueprintArtifact from './components/BlueprintArtifact';
 import HowItWorks from './components/HowItWorks';
 import GradingGuide from './components/GradingGuide';
 import NfcSecurityExplainer from './components/NfcSecurityExplainer';
@@ -28,6 +29,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 font-sans selection:bg-cyan-500/30">
       <Header />
       <main>
+        <BlueprintArtifact />
         <Hero />
         <HowItWorks />
         <GradingGuide />
