@@ -1,4 +1,4 @@
-export type TabType = 'dashboard' | 'portfolio' | 'grading' | 'vault' | 'marketplace' | 'track' | 'support' | 'account' | 'blueprint';
+export type TabType = 'dashboard' | 'portfolio' | 'grading' | 'vault' | 'marketplace' | 'track' | 'support' | 'account';
 
 export interface CardItem {
   id: string; // VCA-882194

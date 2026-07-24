@@ -29,7 +29,6 @@ export default function Sidebar({ activeTab, setActiveTab, portfolioCount }: Sid
     { id: 'track' as TabType, label: 'Track / Verify', icon: QrCode },
     { id: 'support' as TabType, label: 'Support', icon: HelpCircle },
     { id: 'account' as TabType, label: 'Account', icon: Settings },
-    { id: 'blueprint' as TabType, label: 'Slab Blueprint 3D', icon: Cpu, badge: 'NEW' },
   ];
 
   return (

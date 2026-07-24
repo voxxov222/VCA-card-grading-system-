@@ -17,6 +17,7 @@ import NfcSimulationModal from './components/NfcSimulationModal';
 import AddCardModal from './components/AddCardModal';
 
 export default function App() {
+  const [hasEnteredApp, setHasEnteredApp] = useState(false);
   const [activeTab, setActiveTab] = useState<TabType>('dashboard');
   const [cards, setCards] = useState<CardItem[]>(mockCards);
   const [searchQuery, setSearchQuery] = useState('');
@@ -32,6 +33,23 @@ export default function App() {
   const handleAddCard = (newCard: CardItem) => {
     setCards([newCard, ...cards]);
   };
+
+  if (!hasEnteredApp) {
+    return (
+      <div className="min-h-screen bg-[#050608] flex flex-col relative selection:bg-cyan-500/30">
+        <BlueprintArtifact />
+        <div className="fixed bottom-0 left-0 right-0 p-8 flex justify-center z-50 bg-gradient-to-t from-[#050608] via-[#050608]/80 to-transparent pointer-events-none">
+          <button 
+            onClick={() => setHasEnteredApp(true)}
+            className="pointer-events-auto px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm uppercase tracking-widest rounded-2xl transition-all shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] hover:-translate-y-1 font-mono flex items-center gap-3 animate-in slide-in-from-bottom-10 fade-in duration-1000 delay-500"
+          >
+            <span>Launch Command Center</span>
+            <span className="text-lg">→</span>
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex font-sans selection:bg-cyan-500/30 overflow-x-hidden">
@@ -74,7 +92,6 @@ export default function App() {
               { id: 'track' as TabType, label: 'Track / Verify' },
               { id: 'support' as TabType, label: 'Support' },
               { id: 'account' as TabType, label: 'Account' },
-              { id: 'blueprint' as TabType, label: 'Slab Blueprint 3D' },
             ].map(tab => (
               <button
                 key={tab.id}
@@ -133,12 +150,6 @@ export default function App() {
           {activeTab === 'support' && <SupportView />}
 
           {activeTab === 'account' && <AccountView />}
-
-          {activeTab === 'blueprint' && (
-            <div className="-m-6 md:-m-8 lg:-m-10">
-              <BlueprintArtifact />
-            </div>
-          )}
         </main>
 
         {/* Footer */}
